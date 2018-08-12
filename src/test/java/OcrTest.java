@@ -15,6 +15,6 @@ public class OcrTest {
 
         String content = new Ocr().ocrThis(Paths.get(resource.toURI()));
 
-        Assertions.assertThat(content).isEqualTo("Test 123");
+        Assertions.assertThat(content).isEqualTo("Test 123\n");
     }
 }

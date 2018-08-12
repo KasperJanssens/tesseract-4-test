@@ -11,8 +11,8 @@ public class Ocr {
 
         tesseract.setDatapath("/tessdata_best");
 
-        tesseract.setLanguage("eng");
-        tesseract.setOcrEngineMode(ITessAPI.TessOcrEngineMode.OEM_TESSERACT_ONLY);
+        tesseract.setLanguage("deu");
+        //tesseract.setOcrEngineMode(ITessAPI.TessOcrEngineMode.OEM_TESSERACT_ONLY);
         tesseract.setPageSegMode(ITessAPI.TessPageSegMode.PSM_AUTO);
         try {
             return tesseract.doOCR(path.toFile());
